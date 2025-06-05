@@ -6,11 +6,10 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   const incrementCounter = () => {
-    console.log("Counter incremented");
     dispatch(increment())
   };
   const decrementCounter = () => {
-    console.log("Counter decremented");
+    dispatch(decrement())
   };
   return (
     <div>
